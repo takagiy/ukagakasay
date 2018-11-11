@@ -1,10 +1,18 @@
-# ukagakasay ―伺かを喋らせるコマンド
+# ukagakasay―伺かを喋らせるコマンド
+
+## Usage example
 
 ![ukagakasay Hallo](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/say_hallo.png)
 
 ![ls /usr -l | ukagakasay](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/pipe_ls.png)
 
-## help
+## What's this?
+
+SSTP SEND 1.1を送って伺かを喋らせるコマンドです.
+メッセージに含まれる改行はさくらスクリプトの改行コマンド"\n"に置換されます.
+"\\"および"%"は"\\\\"と"\\%"にエスケープされます.
+
+## Help
 
 ```console
 $ ukagakasay --help
