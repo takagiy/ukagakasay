@@ -1,8 +1,8 @@
 # ukagakasay ―伺かを喋らせるコマンド
 
-![ukagakasay Hallo](wiki/say_hallo.png)
+![ukagakasay Hallo](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/say_hallo.png)
 
-![ls /usr -l | ukagakasay](pipe_ls.png)
+![ls /usr -l | ukagakasay](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/pipe_ls.png)
 
 ## help
 
