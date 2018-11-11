@@ -31,6 +31,13 @@ func main() {
     "Charset: UTF-8\r\n" +
     "Script: "
     message := ""
+    escaper := strings.NewReplacer(
+        `\`, `\\`,
+        "%", `\%`,
+        "\r\n", `\n`,
+        "\r", `\n`,
+        "\n", `\n`,
+    )
 
     if flago.NArg() != 0 {
         message = strings.Join(flago.Args(), " ")
@@ -40,14 +47,8 @@ func main() {
             message += stdin.Text()
             message += "\n"
         }
-        message = strings.NewReplacer(
-            `\`, `\\`,
-            `%`, `\%`,
-            "\r\n", `\n`,
-            "\r", `\n`,
-            "\n", `\n`,
-        ).Replace(message)
     }
+    message = escaper.Replace(message)
 
     _, werr := conn.Write([]byte(header + message))
     if werr != nil {
