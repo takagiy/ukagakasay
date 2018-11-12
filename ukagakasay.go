@@ -49,7 +49,7 @@ func main() {
         }
     }
     message = escaper.Replace(message)
-    message += `\e` + "\n\n"
+    message += `\e` + "\r\n\r\n"
 
     _, werr := conn.Write([]byte(header + message))
     if werr != nil {
