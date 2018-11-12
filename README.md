@@ -3,7 +3,6 @@
 ## Usage example
 
 ![ukagakasay Hallo](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/say_hallo.png)
-
 ![ls /usr -l | ukagakasay](https://raw.githubusercontent.com/wiki/TakagiY/ukagakasay/pipe_ls.png)
 
 ## What's this?
