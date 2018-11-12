@@ -12,6 +12,7 @@ import (
 func main() {
     port := flago.Int("port", 'P', 9821, "SSTP Port (Default 9821)", nil)
     address := flago.String("address", 'A', "localhost", "SSTP Address (Default localhost)", nil)
+    unyuu := flago.Bool("unyuu", 'u', false, "Echo with partner", nil)
     flago.Usage = func() {
         fmt.Println("Usage: ukagakasay [options..] [message]\n")
         flago.PrintDefaults()
@@ -30,7 +31,7 @@ func main() {
     "Sender: ukagakasay\r\n" +
     "Charset: UTF-8\r\n" +
     "Script: "
-    message := ""
+    var message String
     escaper := strings.NewReplacer(
         `\`, `\\`,
         "%", `\%`,
@@ -43,6 +44,7 @@ func main() {
         message = strings.Join(flago.Args(), " ")
     } else {
         stdin := bufio.NewScanner(os.Stdin)
+        message = ""
         for stdin.Scan() {
             message += stdin.Text()
             message += "\n"
