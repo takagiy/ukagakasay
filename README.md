@@ -31,6 +31,7 @@ Usage: ukagakasay [options..] [message]
 Options:
   -A, --address         SSTP Address (Default localhost)
   -P, --port            SSTP Port (Default 9821)
+  -u, --unyuu           Speaking by partner
 
 If message is not specified, pipe stdin.
     (In terminal, send eof by `Ctrl D`.)
