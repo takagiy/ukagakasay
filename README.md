@@ -19,7 +19,7 @@ SSTP SEND 1.1を送って伺かを喋らせるコマンドです.
 * `ukagakasay`をインストールするコマンド
 
 ```console
-go get github.com/TakagiY/ukagakasay
+go get github.com/takagiy/ukagakasay
 ```
 
 ## Help
